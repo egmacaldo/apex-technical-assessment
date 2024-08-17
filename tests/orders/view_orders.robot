@@ -13,6 +13,7 @@ Verify Order History for Signed-In User
     # Verify user has no order history
     Click    ${component_headers['link_orders']}
     Element Should Be Visible    "No orders found"
+    Element Count Should Be    ${page_orders['div_order_count']}    0
     # Navigate to the homepage to add a new order
     Go To    ${base_urls['prod']}
     Element Should Be Visible    ${page_home['div_all_items']}    strict=${False}
@@ -40,6 +41,7 @@ Verify Order History for Signed-In User
     # Navigate to orders page and validate that the order is now reflected
     Click    ${component_headers['link_orders']}
     Page URL Should Be    ${base_urls['prod']}${SUT_PATH_ORDERS}
+    Element Count Should Be    ${page_orders['div_order_count']}    1
     Dynamic Element Should Be Visible    ${page_orders['div_order_container']}    ${product_name}
     ${order_div_id}    Get Dynamic Element Attribute    ${page_orders['div_order_container']}    ${product_name}    id
     ${current_date}    Get Current Date    result_format=%B %d, %Y

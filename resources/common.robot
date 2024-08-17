@@ -160,3 +160,8 @@ Click Dynamic Element Multiple Times
     [Arguments]    ${base_locator}    ${dynamic_value}    ${count}
     ${element}    Format String    ${base_locator}    ${dynamic_value}
     Click With Options    ${element}    clickCount=${count}
+
+Element Count Should Be
+    [Documentation]    Asserts the number of elements matched by the locator in the page.
+    [Arguments]    ${locator}    ${count}
+    Get Element Count    ${locator}    ==    ${count}

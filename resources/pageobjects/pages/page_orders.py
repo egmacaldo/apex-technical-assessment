@@ -1,4 +1,5 @@
 page_orders = {
+    "div_order_count": "//div[@id][contains(@class,'a-box-group')]",
     "div_order_container": "//div[contains(.,'{}')][@class='a-row']/ancestor::div[contains(@class,'a-box-group')]",
     "label_order_placed_date": "//div[@id='{}']//span[text()='Order placed']/parent::div/following-sibling::div/span",
     "label_order_total": "//div[@id='{}']//span[text()='Total']/parent::div/following-sibling::div/span",
