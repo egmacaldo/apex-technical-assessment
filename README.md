@@ -1,6 +1,6 @@
 # Apex Fintech Solutions Manila Technical Assessment
 
-This project contains the automation framework for for submission for the Apex Fintech Solutions technical assessment. This project uses [Robot Framework](https://robotframework.org/) on [Python](https://www.python.org/) using the [Browser Library](https://robotframework-browser.org/).
+This project contains the automation framework for the Apex Fintech Solutions technical assessment. This project uses [Robot Framework](https://robotframework.org/) on [Python](https://www.python.org/) using the [Browser Library](https://robotframework-browser.org/).
 
 ## Setup
 
